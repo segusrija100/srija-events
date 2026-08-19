@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srija Event Management | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">Srija <span>Event Management</span></a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="services.html">Services</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-banner">
+  <p class="section-label">LET'S CONNECT</p>
+  <h1>Plan something beautiful</h1>
+  <p>Tell us about your event and let's create a memorable experience together.</p>
+</section>
+
+<section class="section contact-grid">
+  <div>
+    <p class="section-label">CONTACT DETAILS</p>
+    <h2>Let's make it happen.</h2>
+    <div class="contact-item"><strong>📞 Phone</strong><p>+91 XXXXX XXXXX</p></div>
+    <div class="contact-item"><strong>✉ Email</strong><p>srijaeventmanagement@example.com</p></div>
+    <div class="contact-item"><strong>📍 Location</strong><p>Andhra Pradesh, India</p></div>
+  </div>
+
+  <form id="contactForm" onsubmit="submitForm(event)">
+    <label>Name<input id="name" type="text" placeholder="Your name" required></label>
+    <label>Email<input type="email" placeholder="Your email" required></label>
+    <label>Event Type<select><option>Birthday</option><option>Wedding / Engagement</option><option>College Event</option><option>Corporate Event</option><option>Baby Shower</option><option>Other</option></select></label>
+    <label>Message<textarea placeholder="Tell us about your event..." required></textarea></label>
+    <button class="btn" type="submit">Send Enquiry</button>
+    <p id="formMessage"></p>
+  </form>
+</section>
+
+<!-- YOUR PHOTO WILL BE ADDED HERE AFTER YOU APPROVE THE DESIGN -->
+<section class="profile-section">
+  <div class="profile-photo">
+    <img src="images/srija-profile.jpeg" alt="Srija - Event Manager">
+  </div>
+  <div class="profile-copy">
+    <p class="section-label">MEET THE EVENT MANAGER</p>
+    <h2>Hi, I'm Srija</h2>
+    <p>Turning ideas into beautifully planned moments, with creativity, care and attention to every little detail.</p>
+    <div class="profile-badge"><strong>Srija</strong><span>Event Manager</span></div>
+  </div>
+</section>
+
+<section class="gallery-strip">
+  <div class="gallery-title"><p class="section-label">A LITTLE INSPIRATION</p><h2>Moments we love</h2></div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80" alt="Elegant event decoration">
+    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Celebration table">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Wedding celebration">
+  </div>
+</section>
+
+<section class="section contact-gallery"><p class="section-label">EVENT INSPIRATION</p><h2>Details make the difference.</h2><div class="gallery">
+<img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85" alt="Event setup">
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85" alt="Celebration">
+<img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=85" alt="Party">
+</div></section>
+<footer><p>© 2026 Srija Event Management • Made with passion</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
